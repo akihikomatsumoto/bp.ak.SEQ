@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 209.0, 56.0, 938.0, 677.0 ],
+		"rect" : [ 122.0, 143.0, 864.0, 464.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -38,6 +38,21 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-31",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 1314.867676, 520.933105, 71.0, 22.0 ],
+					"style" : "",
+					"text" : "+ 0.000001"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-60",
 					"maxclass" : "number",
@@ -1505,7 +1520,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 184.037537, 43.0, 51.0, 18.0 ],
 					"style" : "",
-					"text" : "7 54",
+					"text" : "5 35",
 					"textcolor" : [ 1.0, 1.0, 1.0, 0.6 ]
 				}
 
@@ -1776,7 +1791,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1314.867676, 524.013184, 105.0, 22.0 ],
+					"patching_rect" : [ 1314.867676, 490.83255, 105.0, 22.0 ],
 					"style" : "",
 					"text" : "scale 0 120 0. 10."
 				}
@@ -3278,7 +3293,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 35.583984, 395.1987, 59.5, 22.0 ],
 					"restore" : 					{
-						"Freeze" : [ 0.0 ],
+						"Freeze" : [ 1.0 ],
 						"GateTime" : [ 80.0 ],
 						"Pulse" : [ 4.0 ],
 						"Steps" : [ 16.0 ],
@@ -3292,7 +3307,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u262011570"
+					"varname" : "u269008614"
 				}
 
 			}
@@ -3999,6 +4014,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-82", 0 ],
+					"source" : [ "obj-31", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
 					"source" : [ "obj-32", 0 ]
 				}
@@ -4303,7 +4325,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-82", 0 ],
+					"destination" : [ "obj-31", 0 ],
 					"source" : [ "obj-80", 0 ]
 				}
 
@@ -4409,23 +4431,24 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-125" : [ "NoteGrid", "NoteGrid", 0 ],
-			"obj-157" : [ "Swing enable[2]", "Swing enable", 0 ],
-			"obj-28" : [ "Sync[1]", "Sync", 0 ],
-			"obj-155" : [ "Swing amount[2]", "Swing amount", 0 ],
-			"obj-49" : [ "Freeze", "Freeze", 0 ],
-			"obj-95" : [ "Steps[1]", "Steps", 0 ],
-			"obj-185" : [ "Sequence", "Sequence", 0 ],
-			"obj-120" : [ "Max pulse[2]", "Max pulse", 0 ],
-			"obj-130" : [ "mute[33]", "mute", 0 ],
-			"obj-25" : [ "GateTime[3]", "GateTime", 0 ],
 			"obj-96" : [ "Pulse[2]", "Pulse", 0 ],
-			"obj-2" : [ "trans_trig", "trans_trig", 0 ]
+			"obj-120" : [ "Max pulse[2]", "Max pulse", 0 ],
+			"obj-49" : [ "Freeze", "Freeze", 0 ],
+			"obj-185" : [ "Sequence", "Sequence", 0 ],
+			"obj-155" : [ "Swing amount[2]", "Swing amount", 0 ],
+			"obj-95" : [ "Steps[1]", "Steps", 0 ],
+			"obj-157" : [ "Swing enable[2]", "Swing enable", 0 ],
+			"obj-125" : [ "NoteGrid", "NoteGrid", 0 ],
+			"obj-2" : [ "trans_trig", "trans_trig", 0 ],
+			"obj-25" : [ "GateTime[3]", "GateTime", 0 ],
+			"obj-130" : [ "mute[33]", "mute", 0 ],
+			"obj-28" : [ "Sync[1]", "Sync", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "swingCalc.js",
-				"bootpath" : "C74:/packages/BEAP/misc",
+				"bootpath" : "/Volumes/EXHDD/_MyMusic/MaxPatch/BEAPPatch/BEAP-master/misc",
+				"patcherrelativepath" : "../BEAP-master/misc",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
